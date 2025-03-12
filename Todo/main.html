@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>To Do List</h1>
+            <div class="search-nav-bar">
+                <input type="search" placeholder="search Notes">
+                <select name="status" id="status">
+                    <option value="All">All</option>
+                    <option value="Completed">Completed</option>
+                    <option value="In-Complete">In-Complete</option>
+                </select>
+                <img src="/" alt="toggle" class="toggle-img" onclick="toggle()">
+            </div>
+        </header>
+        <main class="notes-section">
+            <ul class="note-list">
+                
+            </ul>
+        </main>
+        <footer>
+            <span class="add-note" onclick="addNote()">+</span>
+        </footer>
+    </div>
+    <div class="hidden pop-up">
+        <section class="pad">
+            <div class="note-input">
+                <h1>New Note</h1>
+                <textarea name="new-note" id="new-note" placeholder="Add Your Note Here..."></textarea>
+                <section class="buttons">
+                    <button type="button" onclick="cancel()">Cancel</button>
+                    <button type="button" onclick="save()">Save</button>
+                </section>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+:root {
+    /* Light Theme */
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #6200ee;
+    --secondary-color: #03dac6;
+}
+
+[data-theme="dark"] {
+    /* Dark Theme */
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+}
+.hidden{
+    display: none;
+}
+.checked{
+    text-decoration: line-through;
+}
