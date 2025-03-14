@@ -39,35 +39,35 @@ A simple yet powerful To-Do List application built with **HTML**, **CSS**, and *
 ## Screenshots
 
 ### Light Theme
-![Light Theme Screenshot](./screenshots/light-mode.png)
+![Light Theme Screenshot](.Todo/Todo/screenshots/light-mode.png)
 *The application in light mode with a clean and minimal design.*
 
 ### Dark Theme
-![Dark Theme Screenshot](./screenshots/darkmode.png)
+![Dark Theme Screenshot](./Todo/screenshots/darkmode.png)
 *The application in dark mode for a sleek and modern look.*
 
 ### Add Note
-![Add Note Screenshot](./screenshots/add-note.png)
+![Add Note Screenshot](./Todo/screenshots/add-note.png)
 *Adding a new task to the to-do list.*
 
 ### Edit Note
-![Edit Note Screenshot](./screenshots/edit-note.png)
-![Edit Note Screenshot](./screenshots/edit-inplace.png)
+![Edit Note Screenshot](./Todo/screenshots/edit-note.png)
+![Edit Note Screenshot](./Todo/screenshots/edit-inplace.png)
 *Editing an existing task in place.*
 
 ### Delete Note
-![Delete Note Screenshot](./screenshots/delete.png)
+![Delete Note Screenshot](./Todo/screenshots/delete.png)
 *Deleting a task with a single click.*
 *NOTE #5 is deleted*
 
 ### Search Functionality
-![Search Functionality Screenshot](./screenshots/search.png)
+![Search Functionality Screenshot](./Todo/screenshots/search.png)
 *Searching for tasks using the search bar.*
 
 ### Categorization
-![Categorization Screenshot](./screenshots/categorization-2.png)
-![Categorization Screenshot](./screenshots/categorization.png)
-![Categorization Screenshot](./screenshots/categorization-1.png)
+![Categorization Screenshot](./Todo/screenshots/categorization-2.png)
+![Categorization Screenshot](./Todo/screenshots/categorization.png)
+![Categorization Screenshot](./Todo/screenshots/categorization-1.png)
 *Organizing tasks into Incomplete, Completed, and All categories.*
 
 ---
