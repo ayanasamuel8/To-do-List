@@ -7,7 +7,6 @@ if(savedTheme){
 }
 
 var notes = JSON.parse(localStorage.getItem('notes'))
-console.log(notes)
 
 if(!notes){
     initialNote();
@@ -57,7 +56,6 @@ function createEditButton(){
 }
 
 function loadPage(type){
-    console.log('here')
     if(!notes){
         initialNote();
     }
@@ -207,8 +205,6 @@ async function searchNote(){
 function changeStatus(){
     let dropdown = document.getElementById('status');
     loadPage(dropdown.value)
-
-    console.log(`status changed to: ${dropdown.value}`)
 }
 function deleteNote(div){
     let firstParent = div.parentElement;
@@ -235,6 +231,13 @@ function editNote(div){
     let li = document.getElementById(`${id}`);
     let span = li.querySelector('.single-note span');
 
-    textArea.textContent = span.textContent;
+    textArea.value = span.textContent;
     popUp.classList.remove('hidden');
+    const newNoteInput = document.querySelector('#new-note');
+    newNoteInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' && !event.shiftKey) {
+            save('edit', id);
+        }
+    });
+    newNoteInput.focus();
 }

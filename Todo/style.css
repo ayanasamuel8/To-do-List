@@ -1,30 +1,31 @@
 :root {
     /* Light Theme */
     --background-color: #FDF1DD; /* Soft beige */
-    --text-color: #373B41; /* Dark gray for text */
-    --secondary-text-color: #F3E5C3; /* Muted teal for secondary text */
-    --primary-color: #174E4F; /* Deep teal for buttons and accents */
-    --secondary-color: #F3E5C3; /* Light beige for complementary accents */
-    --checked-gray: #DDD7C5; /* Light gray for checked items */
-    --checkmark-color: #174E4F; /* Deep teal for checkmarks */
+    --text-color: #373B41; /* Deep gray */
+    --secondary-text-color: #7fb5bc; /* Muted teal */
+    --primary-color: #174E4F; /* Deep teal for accents */
+    --secondary-color: #afa07b; /* Light beige for contrast */
+    --checked-gray: #8f856a; /* Softer gray */
+    --checkmark-color: #33595E; /* Deep muted teal */
     --delete-icon: url('assets/delete.png');
     --edit-icon: url('assets/pen.png');
-    --shadow: rgba(55, 59, 65, 0.1); /* Subtle shadow */
+    --shadow: rgba(55, 59, 65, 0.15); /* Slightly stronger shadow */
 }
 
 [data-theme="dark"] {
     /* Dark Theme */
-    --background-color: #323D42; /* Dark gray */
-    --text-color: #FBF1DC; /* Light beige for text */
-    --secondary-text-color: #F3E5C3; /* Muted green for secondary text */
-    --primary-color: #3F778C; /* Soft blue for buttons and accents */
-    --secondary-color: #6587A1; /* Muted blue for complementary accents */
-    --checked-gray: #38524C; /* Dark green for checked items */
-    --checkmark-color: #3F778C; /* Soft blue for checkmarks */
+    --background-color: #323D42; /* Dark muted gray */
+    --text-color: #FBF1DC; /* Light beige */
+    --secondary-text-color: #8FA985; /* Muted green */
+    --primary-color: #3F778C; /* Soft blue */
+    --secondary-color: #6587A1; /* Muted blue */
+    --checked-gray: #62887f; /* Dark green */
+    --checkmark-color: #3F778C; /* Soft blue */
     --delete-icon: url('assets/delete-light.png');
     --edit-icon: url('assets/edit-light.png');
-    --shadow: rgba(191, 191, 191, 0.1); /* Subtle shadow */
+    --shadow: rgba(191, 191, 191, 0.15); /* Slightly stronger shadow */
 }
+
 html,body{
     position: relative;
     background-color: var(--background-color);
@@ -203,7 +204,8 @@ input[type='checkbox']:checked {
     border-radius: 8px;
     background-color: var(--background-color);
     color: var(--text-color);
-    width: 200px;
+    width: 300px;
+    height: 100px;
     
 }
 .buttons{
