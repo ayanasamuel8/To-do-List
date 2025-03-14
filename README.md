@@ -39,7 +39,7 @@ A simple yet powerful To-Do List application built with **HTML**, **CSS**, and *
 ## Screenshots
 
 ### Light Theme
-![Light Theme Screenshot](.Todo/Todo/screenshots/light-mode.png)
+![Light Theme Screenshot](./Todo/screenshots/light-mode.png)
 *The application in light mode with a clean and minimal design.*
 
 ### Dark Theme
