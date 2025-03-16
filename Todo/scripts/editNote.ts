@@ -1,4 +1,4 @@
-import { Save } from "../dist/save.js";
+import { Save } from "./save.js";
 export default function editNote(div:HTMLElement):void{
     const firstParent = div.parentElement;
     const secondParent = firstParent?.parentElement;
@@ -16,11 +16,11 @@ export default function editNote(div:HTMLElement):void{
         textArea.value = span.textContent;
     popUp?.classList.remove('hidden');
     const newNoteInput = document.querySelector('#new-note') as HTMLInputElement;
-    newNoteInput?.addEventListener('keydown', (event: KeyboardEvent) => {
-        if(event.key === 'Enter' && !event.shiftKey){
+    newNoteInput.onkeydown = (event: KeyboardEvent) => {
+        if (event.key === 'Enter' && !event.shiftKey) {
             Save('edit', id);
         }
-    })
+    };
 
     newNoteInput?.focus();
 }

@@ -180,7 +180,6 @@ function save(mode, id){
 }
 
 function toggle(){
-    console.log('toggled')
     current_theme = rootElement.getAttribute('data-theme')
     if (current_theme == 'dark'){
         rootElement.setAttribute('data-theme', 'light')
@@ -211,8 +210,6 @@ function deleteNote(div){
     let secondParent = firstParent.parentElement
     let thirdParent = secondParent.parentElement
     let id = parseInt(thirdParent.id)
-    console.log(id)
-    console.log(notes)
     notes[id].note = '';
     localStorage.setItem('notes', JSON.stringify(notes));
     thirdParent.remove();

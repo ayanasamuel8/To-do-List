@@ -1,35 +1,33 @@
-import { Save, Cancel, render_page, edit_note, delete_note, add_note, OutOfPad } from './dist/typescript.js'
-document.addEventListener('DOMContentLoaded', renderPage('All'));
+import { 
+    Save, Cancel, render_page, edit_note, 
+    add_note, OutOfPad, Check, ChangeStatus, 
+    Toggle, DeleteNote, Search 
+} from './dist/typescript.js';
 
-window.addNote = addNote
-function addNote(){
-    add_note();
-}
+Object.assign(window, {
+    Save,
+    Cancel,
+    renderPage: render_page,
+    addNote: add_note,
+    editNote: edit_note,
+    deleteNote: DeleteNote,
+    outofpad: OutOfPad,
+    check: Check,
+    changeStatus: ChangeStatus,
+    toggle: Toggle,
+    searchNote: Search
+});
 
-window.save = save
-function save(mode, id){
-    Save(mode,id);
-}
+document.addEventListener('DOMContentLoaded', () => renderPage('All'));
 
-window.cancel = cancel
-function cancel(){
-    Cancel();
-}
+document.addEventListener('keydown', (event) => {
+    if (event.ctrlKey && event.altKey && (event.key === 'N' || event.key === 'n')) {
+        addNote();
+    }
+});
 
-window.randerPage = renderPage
-function renderPage(string){
-    render_page(string);
-}
-
-window.editNote = editNote
-function editNote(div){
-    edit_note(div);
-}
-window.deleteNote = deleteNote
-function deleteNote(){
-    delete_note();
-}
-window.outofpad = outofpad;
-function outofpad(event){
-    OutOfPad(event);
-}
+document.querySelector('#new-note').onkeydown = (event) => {
+    if (event.key === 'Enter' && !event.shiftKey) {
+        Save('add', undefined);
+    }
+};

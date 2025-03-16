@@ -9,6 +9,7 @@ A simple yet powerful To-Do List application built with **HTML**, **CSS**, and *
 ### 1. **Add Notes**
    - Easily add new tasks to your to-do list.
    - Input field with a placeholder for quick note-taking.
+   - **TypeScript Exclusive Feature**: Use the keyboard shortcut **`Ctrl + Alt + N`** (or **`Ctrl + Alt + n`**) to quickly open the "Add Note" dialog.
 
 ### 2. **Edit Notes**
    - Edit existing notes in place without deleting and re-adding them.
@@ -33,6 +34,11 @@ A simple yet powerful To-Do List application built with **HTML**, **CSS**, and *
 
 ### 7. **Responsive Design**
    - The application is designed to work seamlessly on both desktop and mobile devices.
+
+### 8. **TypeScript Integration**
+   - The application now includes a **TypeScript version** for improved type safety and maintainability.
+   - **JavaScript version** is also available for those who prefer it.
+   - Modules are used for better code organization and reusability.
 
 ---
 
@@ -77,6 +83,7 @@ A simple yet powerful To-Do List application built with **HTML**, **CSS**, and *
 1. **Add a Note:**
    - Click the **"Add Note"** button.
    - Enter your task in the textarea and press **Enter** or click **Save**.
+   - **TypeScript Exclusive**: Use the keyboard shortcut **`Ctrl + Alt + N`** (or **`Ctrl + Alt + n`**) to quickly open the "Add Note" dialog.
 
 2. **Edit a Note:**
    - Click the **Edit** button (pen icon) next to the task you want to edit.
@@ -101,7 +108,20 @@ A simple yet powerful To-Do List application built with **HTML**, **CSS**, and *
 - **HTML**: Structure of the application.
 - **CSS**: Styling and theming.
 - **JavaScript**: Logic and functionality.
+- **TypeScript**: Added for type safety and improved maintainability (optional).
+- **ES Modules**: Used for better code organization and reusability.
 - **LocalStorage**: Persisting notes and theme preferences.
+
+---
+
+## TypeScript Version
+
+The **TypeScript version** of the application includes additional features and improvements:
+- **Static Type Checking**: Catch errors during development for more robust code.
+- **Keyboard Shortcut**: Use **`Ctrl + Alt + N`** (or **`Ctrl + Alt + n`**) to quickly add a new note.
+- **ES Modules**: Better code organization with `import`/`export` syntax.
+
+> **Note**: The keyboard shortcut (**`Ctrl + Alt + N`**) is exclusive to the TypeScript version and is not available in the JavaScript version.
 
 ---
 
@@ -122,7 +142,7 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 For any questions or feedback, feel free to reach out:
 
 - **Email**: ayanasamuel8@gmail.com
-- **GitHub**: [your-username](https://github.com/ayanasamuel8)
+- **GitHub**: [ayanasamuel8](https://github.com/ayanasamuel8)
 
 ---
 
